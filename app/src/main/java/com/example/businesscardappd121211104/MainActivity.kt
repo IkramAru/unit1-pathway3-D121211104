@@ -75,12 +75,12 @@ fun CardText(name: String, job: String, modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(20.dp))
             Text(
                 text = name,
-                fontSize = 32.sp,
+                fontSize = 45.sp,
                 color = Color.White,
                 modifier = Modifier
                     .padding(7.dp)
                     .align(Alignment.CenterHorizontally)
-                    .offset(x = (0).dp,y = (-240).dp),
+                    .offset(x = (0).dp,y = (-260).dp),
                 fontWeight = FontWeight.ExtraBold,
                 textAlign = TextAlign.Center
             )
@@ -89,7 +89,7 @@ fun CardText(name: String, job: String, modifier: Modifier = Modifier) {
                 fontSize = 20.sp,
                 color = Color.White,
                 modifier = Modifier
-                    .offset(y = (-240).dp),
+                    .offset(y = (-250).dp),
                 fontWeight = FontWeight.Bold
             )
         }
@@ -101,7 +101,7 @@ fun CardText(name: String, job: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun ContactText(modifier: Modifier = Modifier) {
-    Column(modifier.padding(bottom = 300.dp, start = 0.dp)) {
+    Column(modifier.padding(bottom = 320.dp, start = 0.dp)) {
         Row(modifier = Modifier
             .padding(7.dp))
         {
@@ -157,6 +157,6 @@ fun ContactText(modifier: Modifier = Modifier) {
 @Composable
 fun BusinessCardPreview() {
     BusinessCardAppD121211104Theme {
-        CardText("Muhammad Ikram Arullahafif", "Informatics Engineering Student")
+        CardText("Ikram Arullahafif", "Informatics Engineering Student")
     }
 }
